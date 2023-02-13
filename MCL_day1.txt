@@ -1,0 +1,25 @@
+KU Media Communication Lab 
+- Image Processing & Computer Vision
+ex) Frame Rate Up, Object Tracking, Object Segmentation(에펙의 모션 브러쉬?), Future Motion Estimation
+- Machine Learning
+ex) Multi-task Learning, Order Learning(상대 평가)
+
+- Google Colab based on Python, 확장자는 ipynb
+- Google 에서 GPU 할당해주는 방식 클라우드 기반 무료 개발 환경
+- AI : 인간 사고를 구현 > ML : 컴퓨터가 데이터로부터 스스로 학습할 수 있는 알고리즘 개발 > DL : 인공 신경망 알고리즘 기반으로 ML의 한 종류
+- ML -> 1. supervised 정답 O, 예측모델용 / 2. unsupervised 정답 X, 군집화용
+- ML는 GPU를 통해 병렬 컴퓨팅을 통해 빠른 연산 처리 수행
+
+용어 정리
+- 라벨(label, target, Ground Truth, 정답) : 모델의 입력에 데이터를 넣었을 때 원하는 출력
+- 클래스(Class) : 라벨의 종류 ex) 비행기, 차, 고양이, 개 ,...
+- 배치(Batch) : 한 번에 들어가는 데이터 개수 
+ex) 700 개 이미지 데이터 셋 -> 7번에 걸쳐 학습 = 7개의 배치, 배치 사이즈(batch size) : 100개
+- 에폭(Epoch) : 한 번의 학습과정
+ex) epochs = 40 -> 전체 데이터를 40번 사용해서 학습
+ex) 총 100개 데이터 셋
+batch size = 10 -> 1 iteration = 10 data에 대한 학습 
+1 Epoch = 10 iteration
+ex) 전체 2000 개 데이터 epochs = 20, batch size = 500
+1 epoch = 500 batch size X 4 iterations
+20 epochs = 500 batch size X 80 iterations = 2000 total data X 20 times
